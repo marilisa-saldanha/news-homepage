@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+:root {
+  /* Colors */
+  /* Primary */
+  --soft-orange: hsl(35, 77%, 62%);
+  --soft-red: hsl(5, 85%, 63%);
+  /* Neutral */
+  --off-white: hsl(36, 100%, 99%);
+  --grayish-blue: hsl(233, 8%, 79%);
+  --dark-grayish-blue: hsl(236, 13%, 42%);
+  --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: .938rem;
+  background-color: var(--off-white);
+}
+
+.header {
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .logo img{
+  width: 3.5rem;
+}
+
+.header nav {
+  opacity: 0;
+  z-index: -999;
+  transition: all 0.3s ease-in-out;
+}
+
+.header nav.open {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60vw;
+  background-color: white;
+  padding: 1.25rem;
+  opacity: 1;
+  z-index: 99999999999;
+}
+
+.header nav #closeMenu {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  z-index: 99999;
+  cursor: pointer;
+}
+
+.header nav ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style-type: none;
+}
+
+.header nav ul li {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header nav ul li:hover {
+  color: var(--soft-red);
+}
+
+.header .menu button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.firstSection {
+  padding: 0 1rem;
+}
+
+.firstSection article .image img {
+  width: 100%;
+}
+
+.firstSection article:first-child div {
+  padding: 1rem 0;
+}
+
+.firstSection article:first-child div h1 {
+  color: var(--very-dark-blue);
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding-right: 3rem;
+}
+
+.firstSection article:first-child .info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.firstSection article:first-child .info p {
+  color: var(--dark-grayish-blue);
+  font-size: .95rem;
+  line-height: 1.6;
+}
+
+.firstSection article:first-child .info button {
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  width: 12rem;
+  padding: .8rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.firstSection article:first-child .info button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+.firstSection article:last-child {
+  background-color: var(--very-dark-blue);
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+.firstSection article:last-child h2 {
+  color: var(--soft-orange);
+  font-size: 1.7rem;
+  margin-bottom: .8rem;
+}
+
+.firstSection article:last-child div {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.firstSection article:last-child div:not(:last-child) {
+  border-bottom: .063rem solid var(--dark-grayish-blue);
+}
+
+.firstSection article:last-child div h3 {
+  color: var(--off-white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.firstSection article:last-child div h3:hover {
+  color: var(--soft-orange);
+}
+
+.firstSection article:last-child div p {
+  color: var(--grayish-blue);
+  line-height: 1.6;
+  font-size: .9rem;
+}
+
+.secondSection {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 3rem 0 2rem;
+}
+
+.secondSection .cards {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.secondSection .cards img {
+  width: 6.25rem;
+}
+
+.secondSection .cards .cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.secondSection .cards .cardContent span {
+  color: var(--grayish-blue);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.secondSection .cards .cardContent h4 {
+  color: var(--very-dark-blue);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.secondSection .cards .cardContent h4:hover {
+  color: var(--soft-red);
+}
+
+.secondSection .cards .cardContent p {
+  color: var(--dark-grayish-blue);
+  font-size: .95rem;
+}
+
+footer {
+  color: var(--dark-grayish-blue);
+  text-align: center;
+  padding: .5rem;
+  font-size: .9rem;
+}
+
+.attribution a {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.attribution a:hover {
+  color: var(--soft-red);
+}
+
+@media (min-width: 1024px) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
+
+  body {
+    width: 62.5rem;
+  }
+
+  .header {
+    padding: 3rem 0;
+  }
+
+  .header nav {
+    opacity: 1;
+    width: 100%;
+    z-index: auto;
+  }
+
+  .header nav ul {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    right: 0;
+  }
+
+  .header nav ul li {
+    margin: 0;
+  }
+
+  .header nav #closeMenu {
+    display: none;
+  }
+
+  .header .menu button {
+    display: none;
+  }
+
+  .firstSection {
+    display: flex;
+    padding: 0;
+    gap: 2rem;
+  }
+
+  .firstSection article:first-child {
+    width: 56rem;
+  }
+
+  .firstSection article:first-child div {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .firstSection article:first-child div h1 {
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    padding-right: 0;
+    line-height: 1.1;
+  }
+
+  .firstSection article:first-child .info {
+    justify-content: space-between;
+  }
+  
+  .firstSection article:first-child .info p {
+    font-size: .92rem;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+
+  
+  .firstSection article:first-child .info button {
+    width: 10rem;
+    padding: .8rem;
+    font-size: .8rem;
+  }
+    
+  .firstSection article:last-child {
+    background-color: var(--very-dark-blue);
+    padding: 1.25rem;
+    margin: 0;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .firstSection article:last-child h2 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+  }
+
+  .secondSection {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+    margin: 4rem 0 3rem;
+  }
+
+  .secondSection .cards .cardContent {
+    justify-content: space-around;
+  }
+
+  .secondSection .cards .cardContent span {
+    font-size: 1.75rem;
+  }
+
+  .secondSection .cards .cardContent p {
+    font-size: .9rem;
+  }
+
+  footer {
+    font-size: .95rem;
+  }
+}
