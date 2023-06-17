@@ -13,8 +13,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/news-homepage-using-html-css-flexbox-grid-and-javascript-8c0ENlz1_J)
+- [Live Site URL](https://marilisa-saldanha.github.io/news-homepage/)
 
 ## My process
 
