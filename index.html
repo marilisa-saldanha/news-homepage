@@ -9,7 +9,7 @@
   <script src="./src/script.js" defer></script>
 </head>
 <body>
-  <header class="header" role="logo">
+  <header class="header" role="heading">
     <div class="logo">
       <img src="./assets/images/logo.svg" alt="logo">
     </div>
@@ -34,22 +34,22 @@
     </div>
   </header>
 
-  <section class="firstSection" role="firstSection">
-    <article>
-      <picture class="image">
+  <section class="firstSection" role="contentinfo">
+    <article role="article">
+      <picture class="image" role="img">
         <source media="(min-width: 768px)" srcset="./assets/images/image-web-3-desktop.jpg">
         <img src="./assets/images/image-web-3-mobile.jpg" alt="image-mobile">
       </picture>
       <div>
-        <h1>The Bright Future of Web 3.0?</h1>
+        <h1 role="text">The Bright Future of Web 3.0?</h1>
         <div class="info">
-          <p> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+          <p role="text"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
           <button>Read more</button>
         </div>
       </div>
     </article>
 
-    <article>
+    <article role="article">
       <h2>New</h2>
       <div>
         <h3>Hydrogen VS Electric Cars</h3>
@@ -66,7 +66,7 @@
     </article>
   </section>
 
-  <section class="secondSection">
+  <section class="secondSection" role="contentinfo">
     <div class="cards">
       <img src="./assets/images/image-retro-pcs.jpg" alt="image-retro-pcs">
       <div class="cardContent">
